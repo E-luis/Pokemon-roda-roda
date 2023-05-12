@@ -1,0 +1,249 @@
+* {
+    font-family: "Poppins";
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 200px;
+}
+
+body {
+    background-color: #b0b0b0;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+.logo {
+    width: 50px;
+}
+
+.imagem-botao {
+    width: 50px;
+}
+
+.cor-botao {
+    background-color: transparent;
+    border: none;
+}
+
+.listagem-pokemon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5em;
+    margin: 2em;
+    
+    
+}
+    
+  
+
+.cartao-pokemon {
+     display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    width: 15em;
+    height: 23em;
+    /* min-height: 100vh; */
+    /* background-color: #fff; */
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+        0 0 15px #03e9f4,
+        0 0 30px #03e9f4,
+        0 0 40px #03e9f4;
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0005); */
+    border-radius: 20px;
+    border: 5px solid rgb(255, 0, 0);
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.cartao-pokemon:hover {
+    transform: scale(1.05);
+    /* cursor: pointer; */
+    /* background-color: #03e9f4; */
+    /* box-shadow: rgba(0, 0, 0, 0.254) 0px 8px 24px; */
+}
+
+.tresde {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 23px;
+    transition: .5s;
+    /* overflow-y: scroll; */
+    /* margin-right: 15px; */
+    /* height: 100vh; */
+
+
+}
+
+/* .tresde:hover {
+    background-color: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+        0 0 15px #03e9f4,
+        0 0 30px #03e9f4,
+        0 0 40px #03e9f4;
+     -webkit-box-reflect: below 1px linear-gradient(transparent, #0005); 
+    border-radius: 20px;
+} */
+.tresde:first-child {
+    filter: hue-rotate(30deg);
+}
+
+/* .tresde:last-child {
+    filter: hue-rotate(90deg);
+}  */
+.tresde:nth-child(1) {
+    /* top: 0;
+    left: 0; */
+    width: 100%;
+    height: auto;
+    background: linear-gradient(150deg, transparent, #03e9f4);
+    animation: animate1 1s infinite;
+    border-radius: 20px;
+}
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+
+/* .cartao-pokemon {
+    background-color: rgba(115, 115, 115, 0.497);
+    border: 2px solid white;
+    margin: 20px;
+    width: 15em;
+    height: 23em;
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+} */
+
+
+
+.logo:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.informacoes {
+    border: 2px solid rgb(119, 118, 118);
+    border-radius: 15px;
+    text-align: center;
+    padding: 3px;
+    font-size: 16px;
+    margin: 1em;
+}
+
+
+.centralizar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.tipo-veneno {
+    color: rgb(255, 255, 255);
+    background-color: rgba(109, 29, 109, 0.743);
+    text-align: center;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+.tipo-grama {
+    color: hwb(0 100% 0%);
+    background-color: rgb(56, 223, 30);
+    text-align: center;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.tipo-fogo {
+    color: hwb(0 100% 0%);
+    background-color: rgba(255, 0, 0, 0.913);
+    text-align: center;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.tipo-água {
+    color: hwb(0 100% 0%);
+    background-color: rgba(0, 140, 255, 0.627);
+    text-align: center;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.tipo-inseto {
+    color: hwb(0 100% 0%);
+    background-color: rgba(66, 197, 23, 0.814);
+    text-align: center;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.descricao {
+    margin-top: 8px;
+    height: 120px;
+    overflow: auto;
+}
+
+.centralizar img {
+    width: 50px;
+}
+
+.espacamento {
+    margin-top: 16px;
+}
+
+.espacamento2 {
+    margin-top: 16px;
+}
